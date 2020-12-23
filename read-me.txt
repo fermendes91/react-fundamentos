@@ -1,0 +1,15 @@
+Repositorio destinado ao aprendizado do curso de React da Udemy.
+
+https://www.udemy.com/course/react-redux-pt/learn/lecture/6393446#overview
+
+________________________________________________________________________________________
+
+Conteudos do curso
+
+Repositorio 
+https://github.com/cod3rcursos/curso-react-redux
+
+Apostila
+http://files.cod3r.com.br/apostila-react-redux.pdf
+
+
