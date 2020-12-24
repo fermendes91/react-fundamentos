@@ -1,11 +1,12 @@
 import React from 'react'
 
 export default props => {
-    const result = Math.floor(Math.random() * (props.max - props.min + 1)) + props.min;
+    const { min, max } = props; 
+    const result = parseInt(Math.random() * (max - min)) + min;
 
     return (
         <React.Fragment>
-            O valor aleatorio entre {props.min} e {props.max} é: {result}
+            <h2>O valor aleatorio entre {min} e {max} é: {result}</h2>
         </React.Fragment>
     )
 }
