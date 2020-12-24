@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default props => {
+const func = (props) => {
     const { min, max } = props; 
     const result = parseInt(Math.random() * (max - min)) + min;
 
@@ -10,3 +10,5 @@ export default props => {
         </React.Fragment>
     )
 }
+
+export default func;

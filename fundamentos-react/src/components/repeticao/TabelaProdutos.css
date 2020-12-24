@@ -1,0 +1,27 @@
+.TabelaProdutos th {
+    background-color: #005a5a;
+    color: white;
+}
+
+.TabelaProdutos table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.TabelaProdutos td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.TabelaProdutos .Par {
+    background-color: #dddddd;
+}
+
+.TabelaProdutos .Impar {
+    background-color: #9b9b9b;
+}
+
+.textCenter {
+    text-align: center;
+}
