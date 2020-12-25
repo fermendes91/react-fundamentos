@@ -1,0 +1,5 @@
+--> Comunicação Direta x Indireta.
+    A Comunicação direta é quando temos a comunicação de pai para filho, passando essas informações via props.
+    A Comunicação indireta é quando temos a necessidade de passar as propriedades do filho para o pai.
+        Que funciona atraves de uma função que o pai passara para o filho... e quando o filho executar essa função as informações serão fornecidas
+        exemplo dessa implementação esta na pasta src/comunicacao/IndiretaPai.jsx
