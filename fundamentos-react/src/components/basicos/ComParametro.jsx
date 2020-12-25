@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function ComParametro(props) {
-    console.log('propriedades do componente: ', props)
     const status = props.nota >= 7 ? 'Aprovado' : 'Recuperação';
     return (
         <div>

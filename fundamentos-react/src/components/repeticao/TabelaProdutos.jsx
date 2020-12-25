@@ -4,8 +4,6 @@ import produtos from '../../data/produtos'
 import "./TabelaProdutos.css"
 
 export default (props) => {
-    console.log(produtos)
-
     function produtosTR() {
         return produtos.map((prod, i) => {
             return (
