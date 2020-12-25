@@ -9,7 +9,7 @@ export default (props) => {
     function produtosTR() {
         return produtos.map((prod, i) => {
             return (
-                <tr key={prod.id} className={i % 2 == 0 ? 'Par' : 'Impar'}>
+                <tr key={prod.id} className={i % 2 === 0 ? 'Par' : 'Impar'}>
                     <td >{prod.id}</td>
                     <td className="textCenter">{prod.nome}</td>
                     <td className="textCenter">R$ {prod.valor.toFixed(2)}</td>
