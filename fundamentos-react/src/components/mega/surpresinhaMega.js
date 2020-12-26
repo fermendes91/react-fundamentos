@@ -1,22 +1,22 @@
 
 const surpresinhaMega = (qtde = 6) => {
 
+    
     if (qtde < 6) {
-        console.log('O número minimo para a surpresinha são 6')
-        return;
+        return [];
     }
 
     let arr = Array.apply(null, Array(qtde))
 
     arr = arr.map((_, i, arrMap) => {
-        let value = randomValue()
+        let aleatorio = randomValue()
 
-        while (arr.find(item => item === value)) {
-            value = randomValue()
+        while (arr.find(vlrArray => vlrArray === aleatorio)) {
+            aleatorio = randomValue()
         }
-        arrMap[i] = value
+        arrMap[i] = aleatorio
 
-        return value;
+        return aleatorio;
 
     })
 

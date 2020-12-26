@@ -7,7 +7,6 @@ const Input = () => {
     const [valor, setValor] = useState('Inicial')
 
     function quandoMudar(e) {
-        console.log(e.target.value)
         setValor(e.target.value)
     }
 
