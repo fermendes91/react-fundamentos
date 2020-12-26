@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Mega from './components/mega/Mega'
 import Contador from './components/contador/Contador'
 import Input from './components/formulario/Input'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
@@ -24,6 +25,11 @@ const App = _ =>
         <h1>Fundamentos React JS</h1>
 
         <div className="Cards">
+
+            <Card titulo="#13 - Desafio Mega" color="#5e35b1">
+                <Mega />
+                <Mega numerosSorteados={8} />
+            </Card>
 
             <Card titulo="#12 - Contador" color="#424242">
                 <Contador numeroInicial={100} />
