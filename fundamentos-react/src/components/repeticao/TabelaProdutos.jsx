@@ -3,7 +3,7 @@ import React from 'react'
 import produtos from '../../data/produtos'
 import "./TabelaProdutos.css"
 
-export default (props) => {
+const TabelaProdutos = _ => {
     function produtosTR() {
         return produtos.map((prod, i) => {
             return (
@@ -34,3 +34,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default TabelaProdutos

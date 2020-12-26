@@ -18,7 +18,7 @@ import Primeiro from './components/basicos/Primeiro'
 import "./App.css"
 
 // o underline significa que função tem somente 1 parametro, mas que o mesmo nao sera usada dentro deste componente
-export default _ =>
+const App = _ =>
     <div className="App">
         <h1>Fundamentos React JS</h1>
 
@@ -82,3 +82,5 @@ export default _ =>
         </div>
 
     </div>
+
+    export default App;

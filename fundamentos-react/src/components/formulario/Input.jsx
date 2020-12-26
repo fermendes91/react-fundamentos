@@ -19,7 +19,7 @@ const Input = () => {
                 flexDirection: 'column'
             }}>
                 <input value={valor} onChange={quandoMudar} />
-                <input value={valor} readOnly />
+                <input value={valor} readOnly style={{backgroundColor: "gray"}}/>
                 <input value={undefined} /> {/* componente não esta associado a nenhum estado. ( não é usual ) */ }
             </div>
         </div>

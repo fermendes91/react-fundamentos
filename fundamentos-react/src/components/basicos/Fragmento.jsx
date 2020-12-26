@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Fragmento(props) {
+function Fragmento(props) {
     return (
         // A forma reduzida de utilizar um fragmento é pela tag <> </>, mas desta forma não é possivel passar parametros para o Fragmento.
         <React.Fragment key="1">
@@ -9,3 +9,5 @@ export default function Fragmento(props) {
         </React.Fragment>
     )
 }
+
+export default Fragmento

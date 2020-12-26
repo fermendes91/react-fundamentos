@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import IndiretaFilho from './IndiretaFilho'
 
-export default props => {
+const IndiretaPai = _ => {
 
     // o useState retorna um array de 2 posições, sendo a primeira posição o valor de fato, e a segunda a função que alterará o valor deste state.
 
@@ -29,3 +29,5 @@ export default props => {
         </div>
     )
 }
+
+export default IndiretaPai

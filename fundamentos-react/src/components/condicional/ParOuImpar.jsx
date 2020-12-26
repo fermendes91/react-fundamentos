@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default props => {
+const ParOuImpar = props => {
 
     const isPar = props.numero % 2 === 0;
     return (
@@ -9,3 +9,5 @@ export default props => {
         </div>
     )
 }
+
+export default ParOuImpar

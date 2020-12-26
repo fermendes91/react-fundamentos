@@ -1,4 +1,4 @@
-export default props => {
+const IfElse = props => {
     // verifica se dentro do componente If existe um componente Else
     const elseChild = props.children.filter(child => child.type && child.type.name === 'Else')[0];
 
@@ -16,4 +16,5 @@ export default props => {
 
 }
 
-export const Else = props => props.children;
+export default IfElse
+export const Else = props => props.children

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default props => {
+const IndiretaFilho = props => {
     const cb = props.quandoClicar
     
     const max = 80;
@@ -17,3 +17,5 @@ export default props => {
         </div>
     )
 }
+
+export default IndiretaFilho

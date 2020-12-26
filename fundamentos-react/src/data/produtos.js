@@ -1,4 +1,4 @@
-export default [
+const produtos = [
     {id: 1, nome: 'Placa de Video RTX3080', valor: 5999.99},
     {id: 2, nome: 'Mouse Logitech G502', valor: 596.99},
     {id: 3, nome: 'Teclado Logitech G813', valor: 899.99},
@@ -7,3 +7,5 @@ export default [
     {id: 6, nome: 'Gabinete NZXT 230', valor: 399.99},
     {id: 7, nome: 'Monitor ASUS BlackStrike X3', valor: 2599.99},
 ]
+
+export default produtos

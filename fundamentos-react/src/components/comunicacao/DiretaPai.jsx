@@ -2,7 +2,7 @@ import React from 'react'
 
 import DiretaFilho from './DiretaFilho'
 
-export default props => {
+const DiretaPai = _ => {
     return (
         <div>
             <DiretaFilho nome="Fernando" idade={29} nerd={true} />
@@ -12,3 +12,5 @@ export default props => {
         </div>
     )
 }
+
+export default DiretaPai

@@ -1,4 +1,4 @@
-export default props => {
+const If = props => {
     
     if(props.test) {
         return props.children 
@@ -7,3 +7,5 @@ export default props => {
     }
 
 }
+
+export default If
