@@ -29,7 +29,7 @@ const UseState = (props) => {
             
             <SectionTitle title="#Exercicio 02 - Componente controlado (input) " />
             <input type="text" className="input" value={name} onChange={(e => setName(e.target.value) )} />
-            
+            <span>{name}</span>
         </div>
     )
 }
