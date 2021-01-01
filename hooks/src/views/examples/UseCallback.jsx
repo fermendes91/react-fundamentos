@@ -1,14 +1,31 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import PageTitle from '../../components/layout/PageTitle'
 
+import UseCallbackButtons from './UseCallbackButtons'
+
 const UseCallback = (props) => {
+
+    const [count, setCount] = useState(0)
+
+    /* sempre que o componente pai é renderizado uma nova função é criada
+     por isso criamos o useCallback para que função seja criada somente 1x */
+    const inc = useCallback((delta) => {
+        setCount(current => current + delta)
+    }, [setCount])
+
     return (
         <div className="UseCallback">
             <PageTitle
                 title="Hook UseCallback"
-                subtitle="Retorna uma função memoizada!"
+                subtitle="Retorna uma função memorizada!"
             />
+             <div className="center">
+                <span className="text">{count}</span>
+                <UseCallbackButtons inc={inc} />
+            </div>
         </div>
+
+        
     )
 }
 
