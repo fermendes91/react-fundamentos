@@ -1,15 +1,14 @@
 import { createStore, combineReducers } from 'redux'
 
+import numerosReducer from './reducers/numeros'
+
 const reducers = combineReducers({
-  numeros: (state, action) => {
-    console.log(state, ' ', action)
-    return {
-      min: 1,
-      max: 10,
-    }
-  },
+  numeros: numerosReducer,
+  /*reducer criado de exemplo para entender que sempre que uma action é disparada
+    vamos passar por todos os reducers, o switch case acima, serve para referenciarmos 
+    o que faremos de acordo com o tipo da action disparado.
+  */
   nomes: (state, action) => {
-    console.log(state, ' ', action)
     return ['Fernando', 'Thaysa', 'Mendes', 'Maciel']
   },
 })
