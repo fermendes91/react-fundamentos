@@ -3,12 +3,13 @@ import React from 'react'
 import Card from './Card'
 
 const Soma = (props) => {
+  const { minimo, maximo } = props
   return (
     <Card title="Soma dos números" blue>
       <div>
         <span>
           <span>Somatario: </span>
-          <strong>10</strong>
+          <strong>{minimo + maximo}</strong>
         </span>
       </div>
     </Card>
