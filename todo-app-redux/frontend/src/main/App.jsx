@@ -1,17 +1,16 @@
 import 'modules/bootstrap/dist/css/bootstrap.min.css'
 import 'modules/font-awesome/css/font-awesome.min.css'
 import '../template/custom.css'
-
-import React from 'react';
+import React from 'react'
 
 import Menu from '../template/Menu'
-import Routes from './Routes';
+import Routes from './Routes'
 
 const App = () => (
-    <div className="container" >
-        <Menu />
-        <Routes />
-    </div>
+  <div className="container">
+    <Menu />
+    <Routes />
+  </div>
 )
 
-export default App;
+export default App
