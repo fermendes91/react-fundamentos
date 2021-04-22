@@ -1,7 +1,7 @@
 import { ADD_USER, SELECT_USER } from '../actions/constants'
 
 const initialState = {
-  selectedUser: {},
+  selectedUser: null,
   users: [{ cpf: '123', name: 'Fernando', phone: '321' }],
 }
 

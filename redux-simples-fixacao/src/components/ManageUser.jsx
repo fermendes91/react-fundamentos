@@ -6,10 +6,28 @@ import { addUser } from '../store/actions/userAction'
 import Card from './Card'
 import './ManageUser.css'
 
-const ManageUser = (props) => {
-  const { addUser, selectedUser = {} } = props
+const emptyUser = {
+  cpf: '',
+  name: '',
+  phone: '',
+}
 
-  const [user, setUser] = useState({})
+const ManageUser = (props) => {
+  const { addUser, selectedUser } = props
+
+  console.log({ selectedUser })
+
+  const usuario = selectedUser ? selectedUser : emptyUser
+
+  console.log({ usuario })
+
+  const [user, setUser] = useState(usuario)
+
+  // por mais que o meu selectedUser agora possua valor depois de selecionado no componente List Users,
+  // o useState nao esta atualizando o conteudo  para que os dados sejam exibidos em tela,
+  //, deixando os inputs em branco... Como posso tratar nesse caso para que o item selecionado
+  // no componente ListUser, seja exibido nesta tela. ?!
+  console.log({ user })
 
   const insertUser = (event, user) => {
     event.preventDefault()
