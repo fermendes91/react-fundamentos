@@ -19,7 +19,7 @@ const Intervalo = (props) => {
           <input
             type="number"
             value={min}
-            onChange={(e) => props.alterarNumeroMinimo(+e.target.value)}
+            onChange={(e) => props.alterarMinimo(+e.target.value)}
           />
         </span>
         <span>
@@ -27,7 +27,7 @@ const Intervalo = (props) => {
           <input
             type="number"
             value={max}
-            onChange={(e) => props.alterarNumeroMaximo(+e.target.value)}
+            onChange={(e) => props.alterarMaximo(+e.target.value)}
           />
         </span>
       </div>
@@ -44,12 +44,12 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    alterarNumeroMinimo: (novoNumero) => {
+    alterarMinimo: (novoNumero) => {
       // action creator -> retorna uma action
       const action = alterarNumeroMinimo(novoNumero)
       dispatch(action)
     },
-    alterarNumeroMaximo: (novoNumero) => {
+    alterarMaximo: (novoNumero) => {
       const action = alterarNumeroMaximo(novoNumero)
       dispatch(action)
     },
