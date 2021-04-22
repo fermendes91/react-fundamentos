@@ -10,7 +10,7 @@
   color: black;
 }
 
-.ListUser tr:nth-child(even) {
+.ListUser tbody:nth-child(even) {
   background-color: #d5eecf;
 }
 
