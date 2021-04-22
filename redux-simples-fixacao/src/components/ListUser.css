@@ -10,19 +10,19 @@
   color: black;
 }
 
-.ListUser tbody:nth-child(even) {
+.ListUser tbody tr:nth-child(even) {
   background-color: #d5eecf;
 }
 
-.ListUser tr:nth-child(odd) {
+.ListUser tbody tr:nth-child(odd) {
   background-color: #9cb995;
 }
 
-.ListUser tr:hover {
+.ListUser tbody tr:hover {
   background-color: rgb(240, 246, 241);
 }
 
-.ListUser thead {
+.ListUser thead tr {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;

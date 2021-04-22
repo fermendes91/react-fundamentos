@@ -11,16 +11,18 @@ const selectUser = (user) => {
 }
 
 const ListUser = (props) => {
-  const { users } = props.users
+  const { users = [] } = props
   const { onSelectUser } = props
 
   return (
     <Card title="Listagem Usuarios" purple>
       <table className="ListUser">
         <thead>
-          <th>CPF</th>
-          <th>Nome</th>
-          <th>Telefone</th>
+          <tr>
+            <th>CPF</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+          </tr>
         </thead>
         <tbody>
           {users.map((user, index) => {
@@ -40,14 +42,14 @@ const ListUser = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    users: state.users,
+    users: state.app.users,
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onSelectUser: async (user) => {
-      await dispatch(selectUser(user))
+    onSelectUser: (user) => {
+      dispatch(selectUser(user))
     },
   }
 }

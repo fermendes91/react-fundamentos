@@ -6,12 +6,11 @@ const initialState = {
 }
 
 function userReducer(state = initialState, action) {
-  console.log(state)
   switch (action.type) {
     case ADD_USER:
-      state.users.push(action.payload)
       return {
         ...state,
+        users: [...state.users, action.payload],
       }
     case SELECT_USER:
       return {
