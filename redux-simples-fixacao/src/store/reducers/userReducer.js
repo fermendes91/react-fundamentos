@@ -5,7 +5,7 @@ const initialState = {
   users: [{ cpf: '123', name: 'Fernando', phone: '321' }],
 }
 
-function userReducer(state = initialState, action) {
+const userReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_USER:
       return {

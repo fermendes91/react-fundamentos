@@ -2,13 +2,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import Card from './Card'
-import { onSelectUser } from '../store/actions/userAction'
+import { selectUser } from '../store/actions/userAction'
 
 import './ListUser.css'
-
-const selectUser = (user) => {
-  onSelectUser(user)
-}
 
 const ListUser = (props) => {
   const { users = [] } = props

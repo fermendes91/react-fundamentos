@@ -6,17 +6,10 @@ import { addUser } from '../store/actions/userAction'
 import Card from './Card'
 import './ManageUser.css'
 
-const state = {
-  user: { cpf: '', name: '', phone: '' },
-}
-
 const ManageUser = (props) => {
-  const { addUser } = props
-  const [user, setUser] = useState(state.user)
+  const { addUser, selectedUser = {} } = props
 
-  if (props.selectedUser) {
-    setUser(props.selectedUser)
-  }
+  const [user, setUser] = useState({})
 
   const insertUser = (event, user) => {
     event.preventDefault()
@@ -54,7 +47,11 @@ const ManageUser = (props) => {
   )
 }
 
-const mapStateToProps = (state) => state
+const mapStateToProps = (state) => {
+  return {
+    selectedUser: state.app.selectedUser,
+  }
+}
 
 const mapDispatchToProps = (dispatch) => {
   return {

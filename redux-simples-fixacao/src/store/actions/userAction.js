@@ -7,7 +7,7 @@ export const addUser = (user) => {
   }
 }
 
-export const onSelectUser = (user) => {
+export const selectUser = (user) => {
   return {
     type: SELECT_USER,
     payload: user,
