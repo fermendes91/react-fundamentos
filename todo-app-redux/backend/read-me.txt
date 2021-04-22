@@ -1,0 +1,12 @@
+Este é o projeto back-end da aplicação TodoApp...
+
+Antes de executa-lo sempre lembrar de deixar o mongodb inicializado, para fazer basta abrir o cmd e digitar na linha de comando.
+mongod
+
+O projeto esta configurando utilizando express, nodemon, pm2, restfulapi
+
+express -> servidor aonde o back-end estara rodando
+nodemon -> responsavel por atualizar o projeto a cada alteração realizada em codigo ( desenv )
+pm2 -> monitoramento da aplicação em ambiente de produção para controle de como esta o servidor back-end rodando ( prd )
+restfulapi -> Api responsavel por chamadas rest no node, o mesmo ja configura e integrado com o mongoose ja cria requisicoes especificas
+    para o objeto que desejamos trabalhar, ( API IMPORTANTE para se aprender, olhar a documentação no .git da API para mais detalhes )
