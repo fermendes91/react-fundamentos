@@ -1,0 +1,14 @@
+.ManageUser input {
+  font-size: 1.8rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ManageUser button {
+  width: 200px;
+  height: 50px;
+  margin-top: 25px;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none;
+}

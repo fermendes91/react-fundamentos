@@ -1,32 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import './App.css'
-import Intervalo from './components/Intervalo'
-import Media from './components/Media'
-import Soma from './components/Soma'
-import Sorteio from './components/Sorteio'
+import ManageUser from './components/ManageUser'
+import ListUser from './components/ListUser'
 
 function App() {
-  const [min, setMin] = useState(1)
-  const [max, setMax] = useState(10)
-
   return (
     <div className="App">
-      <h1>Exercicio React - Sem Redux</h1>
+      <h1>Exercicio React - Com Redux ( Fixação )</h1>
       <div className="linha">
-        <Intervalo
-          minimo={min}
-          maximo={max}
-          onMinChanged={setMin}
-          onMaxChanged={setMax}
-        ></Intervalo>
+        <ManageUser></ManageUser>
       </div>
       <div className="linha">
-        <Media minimo={min} maximo={max}></Media>
-        <Soma minimo={min} maximo={max}></Soma>
-        <Sorteio minimo={min} maximo={max}></Sorteio>
+        <ListUser></ListUser>
       </div>
-      <div></div>
     </div>
   )
 }
